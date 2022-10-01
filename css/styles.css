@@ -1,5 +1,6 @@
 :root {
-  --background-color-header: #ececec;
+  --background-color-main: #ffffff;
+  --background-color-hero-footer: #2f303a;
   --text-color: #757575;
   --title-color: #212121;
   --logo-color-1: #2196F3;
@@ -8,13 +9,10 @@
 
 body {
   font-family: 'Roboto', 'Helvetica Neue', 'Verdana', 'Tahoma', sans-serif;
+  background-color: var(--background-color-main);
 }
 
 /* ================HEADER================ */
-.header {
-  background-color: var(--background-color-header);
-}
-
 .logo-link {
   font-family: 'Raleway';
   font-weight: 700;
@@ -30,7 +28,8 @@ body {
 
 .logo-link,
 .nav-link,
-.contact-link {
+.contact-link,
+.address-link {
   text-decoration: none;
 }
 
@@ -72,5 +71,26 @@ body {
 
 
 
+/* ================FOOTER================ */
+.footer {
+  background-color: var(--background-color-hero-footer);
+}
+
+.logo-part-2-footer {
+  color: var(--background-color-main);
+}
+
+.address-link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--background-color-main);
+}
+
+.footer-opacity {
+  opacity: .6;
+}
 
 
+/* ====================================== */
