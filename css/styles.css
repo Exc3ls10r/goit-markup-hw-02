@@ -2,6 +2,7 @@
   --background-color-main: #ffffff;
   --background-color-hero-footer: #2f303a;
   --background-color-team-gallery: #f5f4fa;
+  --background-alt-hero-btn: #188CE8;
   --text-color: #757575;
   --title-color: #212121;
   --logo-color-1: #2196F3;
@@ -61,7 +62,9 @@ body {
 .nav-link:hover,
 .nav-link:focus,
 .contact-link:hover,
-.contact-link:focus {
+.contact-link:focus,
+.address-link:hover,
+.address-link:focus {
   color: var(--logo-color-1);
 }
 
@@ -79,6 +82,25 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--background-color-main);
+}
+
+.hero-btn {
+  padding: 10px 32px;
+  border: 0;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  color: var(--background-color-main);
+  background-color: var(--logo-color-1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background: var(--background-alt-hero-btn);
 }
 
 .title-hidden {
@@ -169,5 +191,51 @@ body {
   opacity: .6;
 }
 
+.address-link:hover,
+.address-link:focus {
+  opacity: 1;
+}
 
 /* ====================================== */
+
+/* ================PORTFOLIO============= */
+
+.portfolio-preview-btn {
+  padding: 6px 22px;
+  border: 0;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  color: var(--title-color);
+  background: var(--background-color-team-gallery);
+  cursor: pointer;
+}
+
+.portfolio-preview-btn:hover,
+.portfolio-preview-btn:focus {
+  background: var(--logo-color-1);
+  color: var(--background-color-main);
+}
+
+.portfolio-preview-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+}
+
+.portfolio-preview-category {
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+
+
+/* ====================================== */
+
+
+
+
